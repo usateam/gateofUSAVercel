@@ -75,7 +75,7 @@ export const Header = memo((props: Props) => {
                       href="#top"
                       // className="active"
                       // className={active === 'Home' ? 'active' : ''}
-                      // onClick={handleActive}
+                      onClick={handleTrigger}
                       // onClick={() => setActive('Home')}
                     >
                       Home
@@ -85,7 +85,7 @@ export const Header = memo((props: Props) => {
                     <a
                       href="#about"
                       // className={active === 'About' ? 'active' : ''}
-                      // onClick={handleActive}
+                      onClick={handleTrigger}
                       // onClick={() => setActive('About')}
 
                     >
@@ -95,8 +95,8 @@ export const Header = memo((props: Props) => {
                   <li className="scroll-to-section">
                     <a
                       href="#services"
-                      className={active === 'Services' ? 'active' : ''}
-                      // onClick={handleActive}
+                      // className={active === 'Services' ? 'active' : ''}
+                      onClick={handleTrigger}
                       // onClick={() => setActive('Services')}
                     >
                       Services
@@ -107,7 +107,7 @@ export const Header = memo((props: Props) => {
                       // href="#portfolio"
                       href="#features"
                       // className={active === 'Projects' ? 'active' : ''}
-                      // onClick={handleActive}
+                      onClick={handleTrigger}
                     >
                       Projects
                     </a>
@@ -116,7 +116,7 @@ export const Header = memo((props: Props) => {
                     <a
                       href="#blog"
                       // className={active === 'Blog' ? 'active' : ''}
-                      // onClick={handleActive}
+                      // onClick={handleTrigger}
                     >
                       Blog
                     </a>
@@ -125,7 +125,7 @@ export const Header = memo((props: Props) => {
                     <a
                       href="#contact"
                       // className={active === 'Contact' ? 'active' : ''}
-                      // onClick={handleActive}
+                      onClick={handleTrigger}
                     >
                       Contact
                     </a>
