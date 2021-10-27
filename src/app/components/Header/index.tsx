@@ -63,7 +63,7 @@ export const Header = memo((props: Props) => {
           <div className="row">
             <div className="col-12">
               <nav className="main-nav">
-                <a href="index.html" className="logo">
+                <a href="/" className="logo">
                   <img src="assets/images/logo-v1.png" alt="" />
                 </a>
                 <ul
