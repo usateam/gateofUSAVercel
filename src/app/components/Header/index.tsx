@@ -3,19 +3,19 @@
  * Header
  *
  */
-import React, { memo, useState, useEffect } from 'react';
-import styled from 'styled-components/macro';
-import { useTranslation } from 'react-i18next';
-import { messages } from './messages';
-import { Link, useLocation } from 'react-router-dom';
+import React, { memo, useState } from 'react';
+// import styled from 'styled-components/macro';
+// import { useTranslation } from 'react-i18next';
+// import { messages } from './messages';
+import { Link } from 'react-router-dom';
 
 interface Props {}
 
 export const Header = memo((props: Props) => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const { t, i18n } = useTranslation();
+  // const { t, i18n } = useTranslation();
   const [toggle, setToggle] = useState(false);
-  const [active, setActive] = useState('');
+  // const [active, setActive] = useState('');
 
   // const location = useLocation();
   // const { pathname } = location;
@@ -51,7 +51,7 @@ export const Header = memo((props: Props) => {
 
   return (
     <>
-      {t('')}
+      {/* {t('')} */}
       {/*  {t(...messages.someThing())}  */}
 
       <header
@@ -87,7 +87,6 @@ export const Header = memo((props: Props) => {
                       // className={active === 'About' ? 'active' : ''}
                       onClick={handleTrigger}
                       // onClick={() => setActive('About')}
-
                     >
                       About
                     </a>
@@ -163,4 +162,4 @@ export const Header = memo((props: Props) => {
   );
 });
 
-const Div = styled.div``;
+// const Div = styled.div``;

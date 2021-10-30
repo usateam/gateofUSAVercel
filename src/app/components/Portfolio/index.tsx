@@ -4,11 +4,9 @@
  *
  */
 import React, { memo } from 'react';
-import styled from 'styled-components/macro';
-import { useTranslation } from 'react-i18next';
-import { messages } from './messages';
-
-import OwlCarousel from 'react-owl-carousel';
+// import styled from 'styled-components/macro';
+// import { useTranslation } from 'react-i18next';
+// import { messages } from './messages';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 // import './owl.css';
@@ -17,7 +15,7 @@ interface Props {}
 
 export const Portfolio = memo((props: Props) => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const { t, i18n } = useTranslation();
+  // const { t, i18n } = useTranslation();
 
   return (
     <div id="portfolio" className="our-portfolio section">
@@ -139,7 +137,6 @@ export const Portfolio = memo((props: Props) => {
                       </div>
                     </a>
                   </div> */}
-
                 </div>
               </div>
               <div className="owl-nav disabled"></div>
@@ -152,4 +149,4 @@ export const Portfolio = memo((props: Props) => {
   );
 });
 
-const Div = styled.div``;
+// const Div = styled.div``;

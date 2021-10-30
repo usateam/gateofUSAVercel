@@ -3,10 +3,10 @@
  * About
  *
  */
-import React, { memo, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import styled from 'styled-components/macro';
-import { useTranslation } from 'react-i18next';
-import { messages } from './messages';
+// import { useTranslation } from 'react-i18next';
+// import { messages } from './messages';
 import base from '../../api/base';
 import AboutDetail from './AboutDetail/index';
 
@@ -20,12 +20,12 @@ export const About = () => {
       .select({ maxRecords: 1, view: 'Grid view' })
       .eachPage((records, fetchNextPage) => {
         setAbout(records);
-        console.log('about records ', records);
+        // console.log('about records ', records);
         fetchNextPage();
       });
   }, []);
 
-  console.log('about detail ', about);
+  // console.log('about detail ', about);
 
   return (
     <Div>
@@ -35,7 +35,7 @@ export const About = () => {
             <div className="col-lg-12">
               <div className="row">
                 {about.map(item => (
-                  <AboutDetail item={item} />
+                  <AboutDetail key={item.id} item={item} />
                 ))}
               </div>
             </div>

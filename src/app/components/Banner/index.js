@@ -3,27 +3,21 @@
  * Banner
  *
  */
-import React, { memo, useState, useEffect } from 'react';
-import styled from 'styled-components/macro';
-import { useTranslation } from 'react-i18next';
-import { messages } from './messages';
-import { Link } from 'react-router-dom';
-import { visible } from 'chalk';
+import React, { useState, useEffect } from 'react';
+// import styled from 'styled-components/macro';
+// import { useTranslation } from 'react-i18next';
+// import { messages } from './messages';
+// import { Link } from 'react-router-dom';
+// import { visible } from 'chalk';
 import base from '../../api/base';
-import Airtable, { Record, FieldSet } from 'airtable';
+// import Airtable, { Record, FieldSet } from 'airtable';
 import BannerDetail from '../Banner/BannerDetail';
 
 // interface Props {}
 
 export const Banner = () => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const { t, i18n } = useTranslation();
-
-  // type Record<T>{
-  //   smaltitle:string;
-  //   bigtitle: string;
-  //   Attachments: string[];
-  // }
+  // const { t, i18n } = useTranslation();
 
   const [text, setText] = useState([]);
 
@@ -33,13 +27,12 @@ export const Banner = () => {
       .eachPage((records, fetchNextPage) => {
         // result.push(records);
         setText(records);
-        console.log('airtable records ', records);
-        // console.log('airtable records value ', records.map(a=>a.fields));
+        // console.log('airtable records ', records);
         fetchNextPage();
       });
   }, []);
 
-  console.log('textt ', text);
+  // console.log('textt ', text);
   // console.log('textt field ', text[0].fields);
 
   return (
