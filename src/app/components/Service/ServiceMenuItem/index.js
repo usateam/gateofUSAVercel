@@ -22,14 +22,16 @@ const Index = ({ service, details }) => {
   return (
     <>
       {/* first-thumb */}
-      <div className={active ? 'active' : ''} onClick={handleMenuID}>
-        <div className="thumb">
-          <span className="icon">
-            <img src={service.fields.IconImage[0].url} alt="" />
-          </span>
-          {service.fields.icontitle}
+      {service.fields.IsVisible && (
+        <div className={active ? 'active' : ''} onClick={handleMenuID}>
+          <div className="thumb">
+            <span className="icon">
+              <img src={service.fields.IconImage[0].url} alt="" />
+            </span>
+            {service.fields.icontitle}
+          </div>
         </div>
-      </div>
+      )}
       {/* <div className="last-thumb">
         <div className="thumb">
           <span className="icon">
