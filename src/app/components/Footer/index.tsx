@@ -23,16 +23,16 @@ export const Footer = memo((props: Props) => {
           <div className="row">
             <div className="col-lg-12">
               <p>
-                Copyright © 2022 DigiMedia Co., Ltd. All Rights Reserved.
+                Copyright © ClasSelector Co., Ltd. All Rights Reserved.
                 <br />
-                Design:{' '}
+                {/* Design:{' '}
                 <a
                   href="https://templatemo.com"
                   target="_parent"
                   title="free css templates"
                 >
                   TemplateMo
-                </a>
+                </a> */}
               </p>
             </div>
           </div>

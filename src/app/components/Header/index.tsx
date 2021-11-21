@@ -64,7 +64,13 @@ export const Header = memo((props: Props) => {
             <div className="col-12">
               <nav className="main-nav">
                 <a href="/" className="logo">
-                  <img src="assets/images/logo-v1.png" alt="" />
+                  {/* <img src="assets/images/logo-v1.png" alt="" /> */}
+                  <img
+                    width="152px"
+                    height="35px"
+                    src="assets/images/classelector_logo.png"
+                    alt="loading.."
+                  />
                 </a>
                 <ul
                   className="nav"

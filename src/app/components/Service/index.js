@@ -23,6 +23,7 @@ export const Service = memo(() => {
 
   const [service, setService] = useState([]);
   const [detail, setDetail] = useState([]);
+  const [list, setList] = useState([]);
 
   // const dispatch = useDispatch();
   // console.log('menuId ServiceIndex', menuId);
@@ -43,8 +44,19 @@ export const Service = memo(() => {
         // console.log('airtable records value ', records.map(a=>a.fields));
         fetchNextPage();
       });
+    base('technolist')
+      .select({ view: 'Grid view' })
+      .eachPage((records, fetchNextPage) => {
+        setList(records);
+        // console.log('techno records ', records);
+        // console.log('airtable records value ', records.map(a=>a.fields));
+        fetchNextPage();
+      });
   }, []);
 
+  // console.log('list', list);
+  // console.log('detail ', detail);
+  // console.log('list id', list[0].id);
   return (
     <Div>
       {/* {t('')} */}
@@ -92,10 +104,21 @@ export const Service = memo(() => {
               <ul className="nacc">
                 {detail
                   // .filter(x => x.fields.serviceid[0] === menuId)
-                  .map(dt => (
+                  .map((dt, index) => (
                     <ServiceDetail
                       key={dt.id}
                       details={dt}
+                      technolist={list}
+                      // filter(
+                      // (x, i) =>
+                      // console.log('list content ', x.id),
+                      // console.log(
+                      //   'technolist content ',
+                      //   dt.fields.technolist[0],
+                      // ),
+                      // x.id === dt.fields.technolist[index],
+                      // x => x.id == dt.fields.technolist[index],
+                      // )}
                       // {detail.filter(
                       //   dt => dt.fields.serviceid[0] === dt.id,
                       // )}

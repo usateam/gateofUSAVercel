@@ -27,7 +27,7 @@ export const Quote = memo((props: Props) => {
                 data-wow-duration="1s"
                 data-wow-delay="0.3s"
               >
-                <h6>Get Your Free Quote</h6>
+                <h6>Class Selector</h6>
                 <h4>Grow With Us Now</h4>
                 <div className="line-dec"></div>
               </div>
@@ -37,7 +37,7 @@ export const Quote = memo((props: Props) => {
               data-wow-duration="1s"
               data-wow-delay="0.8s"
             >
-              <form id="search" action="#" method="GET">
+              {/* <form id="search" action="#" method="GET">
                 <div className="row">
                   <div className="col-lg-4 col-sm-4">
                     <div>
@@ -69,7 +69,7 @@ export const Quote = memo((props: Props) => {
                     </div>
                   </div>
                 </div>
-              </form>
+              </form> */}
             </div>
           </div>
         </div>

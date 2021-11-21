@@ -27,7 +27,7 @@ export const PreHeader = memo((props: Props) => {
                 <li>
                   <Link href="/" to={''}>
                     {' '}
-                    <i className="fa fa-envelope"></i>digimedia@company.com{' '}
+                    <i className="fa fa-envelope"></i>info@classelector.com{' '}
                   </Link>
 
                   {/* <a href="/">
@@ -48,21 +48,21 @@ export const PreHeader = memo((props: Props) => {
                     <i className="fa fa-facebook"></i>
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="/">
                     <i className="fa fa-behance"></i>
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a href="/">
                     <i className="fa fa-twitter"></i>
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="/">
                     <i className="fa fa-dribbble"></i>
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
