@@ -66,8 +66,7 @@ export const Header = memo((props: Props) => {
                 <a href="/" className="logo">
                   {/* <img src="assets/images/logo-v1.png" alt="" /> */}
                   <img
-                    width="152px"
-                    height="35px"
+                    style={{ width: '152px', height: '35px' }}
                     src="assets/images/classelector_logo.png"
                     alt="loading.."
                   />
@@ -167,5 +166,3 @@ export const Header = memo((props: Props) => {
     </>
   );
 });
-
-// const Div = styled.div``;
